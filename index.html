@@ -4,65 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/index.css" />
+    <script defer src="./index.js"></script>
+    <title>Document</title>
   </head>
   <body>
-    <table class="content">
-      <tr>
-        <td class="side">
-          <div class="sidebar links">
-            <img class="myphoto" src="./img/Sergei.jpg" alt="" />
-            <h3>Sergei Borisov</h3>
-            Sochi, Russia
-            <br /><br />
-            <a href="https://www.google.com">About Me</a>
-            <a href="https://www.yandex.ru">Portfolio</a>
-            <a href="https://linktree.com/asby">Socials</a>
-          </div>
-        </td>
-        <td>
-          <div class="postlist">
-            <div class="post">
-              <h3>About Me</h3>
-              <p>
-                Hi, my name is <del>Slim Shady</del> Sergei Borisov. Previously
-                a 2x startup founder & PM in US early-stage startups. Love
-                tennis, hiking, some CS:GO sometimes. Currently upgrading myself
-                and learning Web-development at Elbrus bootcamp. Here are a few
-                things I did before:
-              </p>
-            </div>
-            <div class="post">
-              <h3>Portfolio</h3>
-              <div class="portfolio list">
-                <div>
-                  <a href="https://www.ycombinator.com/companies/careerist"
-                    ><img
-                      class="photo example"
-                      src="./img/Careerist.png"
-                      alt=""
-                  /></a>
-                  <br />PM at Careerist
-                </div>
-                <div>
-                  <a href="https://www.welovenocode.com/"
-                    ><img class="photo example" src="./img/WLNC.png" alt=""
-                  /></a>
-                  <br />PM at WeLoveNoCode
-                </div>
-                <div>
-                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    ><img class="photo example" src="./img/bonk.jpg" alt=""
-                  /></a>
-                  <br />Sexy Chicks here (click)
-                </div>
-              </div>
-            </div>
-          </div>
-        </td>
-      </tr>
-    </table>
-    <div class="footer">&copy;2023</div>
+    <div class="title">
+      <h1>T.R.A.N.S.L.I.T</h1>
+    </div>
+
+    <div class="content">
+      <form>
+        <input
+          class="formText"
+          type="text"
+          placeholder="Начните вводить текст"
+        />
+        <input class="formButton" type="button" value="Добавить" />
+      </form>
+
+      <section class="dictionary">
+        <div class="column1">
+          <ul class="origin">
+            <li>
+              <p>Привет</p>
+            </li>
+          </ul>
+        </div>
+        <div class="column2">
+          <ul class="translit">
+            <li>
+              <p>Privet</p>
+              <button class="delete">
+                <img src="./icons/delete.svg" alt="" />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="clear">
+        <button class="deleteAll">
+          <img class="delete" src="./icons/delete.svg" alt="" />Очистить все
+        </button>
+      </section>
+    </div>
   </body>
 </html>
